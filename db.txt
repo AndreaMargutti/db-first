@@ -1,2 +1,11 @@
 Nome Tabella: cars
 
+Id                              PRIMARY_KEY BIGINT 
+Data_di_Ritiro                  DATE(YYYY-MM-GG)                                    NOT_NULL
+Marca                           VARCHAR(255)                                        NOT_NULL
+Modello                         VARCHAR(255)                                        NOT_NULL
+Prezzo                          SMALLINT // ? devo inserire il valore massimo?      NOT_NULL
+Km_Percorsi                     MEDIUMINT                                           NOT_NULL DEFAULT= 0
+Condizioni_Interni              TEXT                                                NULL
+Condizioni_Motore               TEXT                                                NULL
+Possibili_Ammaccature           BOOLEAN                                             NULL     DEFAULT = FALSE
